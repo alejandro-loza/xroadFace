@@ -4,8 +4,8 @@
 	overflow: hidden;
 	margin: 0;
 	padding: 0;
-	width: 96px;
-	height: 96px;
+	width: 66px;
+	height: 66px;
 	font-size: 0;
 	text-indent: -9999px;
 	cursor: pointer;
@@ -17,11 +17,11 @@
 .hamburger span {
 	display: block;
 	position: absolute;
-	top: 44px;
+	top: 22px;
 	left: 18px;
 	right: 18px;
-	height: 8px;
-	background: #1a2580;
+	height: 4px;
+	background: #272829;
 }
 
 .hamburger span::before,
@@ -30,15 +30,15 @@
 	position: absolute;
 	left: 0;
 	width: 100%;
-	height: 8px;
-	background-color: #1a2580;
+	height: 4px;
+	background-color: #393C3E;
 	content: "";
 }
 
 .hamburger span::before {
-	top: -20px;
+	top: -10px;
 }
 
 .hamburger span::after {
-	bottom: -20px;
+	bottom: -10px;
 }

@@ -1,11 +1,11 @@
 :host {
-	background: #1a2580;
+	background: #272829;
 	color: #fff;
-	position: fixed;
+	position: absolute;
 	left: -20%;
-	top: 200px;
+	top: 110px;
 	right: auto;
-	bottom: 0;
+	bottom: 40px;
 	width: 20%;
 	min-width: 250px;
 	z-index: 0;
