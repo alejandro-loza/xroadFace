@@ -1,7 +1,7 @@
 :host {
 	background: #272829;
 	color: #fff;
-	position: absolute;
+	position: fixed;
 	left: -20%;
 	top: 110px;
 	right: auto;

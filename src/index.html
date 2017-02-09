@@ -14,5 +14,28 @@
 	<app-root>Loading...</app-root>
 	<script src="https://framework-gb.cdn.gob.mx/gobmx.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.2.2/web-animations.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			var ancho = $("#rightColumn").width()
+			console.log("ancho-> " + ancho);
+			  $(window).scroll(function () {
+				  if (window.innerWidth >= 1000){
+					var docZone = $(document).height() - ( $(".main-footer").height() + $("#rightColumn").height() + 500  );
+					$("#rightColumn").width(ancho)
+					  if ($(document).scrollTop() >= docZone) {
+							  $("#rightColumn").css("position", "relative");
+							  $("#rightColumn").css("top", docZone);
+					  } else {
+						  $("#rightColumn").css("position", "fixed");
+						  $("#rightColumn").css("top", "auto");
+					  }
+				  } else {
+						$("#rightColumn").css("position", "relative");
+					  $("#rightColumn").css("top", 0);
+				  }
+			  });
+
+		});
+	</script>
 </body>
 </html>
